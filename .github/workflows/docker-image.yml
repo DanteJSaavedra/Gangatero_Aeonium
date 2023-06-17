@@ -28,7 +28,9 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t dantejsaavedra/gangatero-aeonium:0.0.2 .
+        docker build -t dantejsaavedra/gangatero-aeonium:latest .
 
     - name: Push Docker Image
       run: |
         docker push dantejsaavedra/gangatero-aeonium:0.0.2
+        docker push dantejsaavedra/gangatero-aeonium:latest
